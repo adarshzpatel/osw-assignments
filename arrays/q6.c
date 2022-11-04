@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main(){
+int main(){
 	int size = 5;
 	int a[5] = {10,6,5,4,1};    
 	int b[5] = {9,8,3,2,1};

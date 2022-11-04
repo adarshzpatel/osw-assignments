@@ -6,13 +6,12 @@ int main(){
     while(i < 15){
         printf("Enter n : ");
         scanf("%d",&n);
-        printf("\n");
         if(n >= 0 && n <=5){
-            baby = baby + n;
+            baby++;
         } else if(n >= 5 && n <= 17){
-            school = school + n;
+            school++;
         } else{
-            adult = adult + n;
+            adult++;
         }
         i++;
     }

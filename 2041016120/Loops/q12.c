@@ -20,9 +20,5 @@ int main()
         {
             printf(" %d is Armstrong number \n",i);
         }
-        else
-        {
-            printf(" %d is not Armstrong number \n",i);
-        }
     }
 }

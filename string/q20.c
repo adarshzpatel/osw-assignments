@@ -13,7 +13,7 @@ int main(){
 		else putchar(str[i]);
 		i++;
 	}
-	print("\n");
+	printf("\n");
 	return 0;
 }
 

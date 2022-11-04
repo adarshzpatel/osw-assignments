@@ -13,7 +13,7 @@ void sort(int a[],int n){
 }
 
 
-void main(){
+int main(){
    	int arr[6] = {1,3,4,1,3,3}; 	
 	int count;
    	sort(arr,6);

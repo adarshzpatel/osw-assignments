@@ -9,7 +9,7 @@ int main(){
 	for(int i = 0 ; i < 10;i++){
 		// bubble sort 
 		for(int j = 0; i < 10; i++) {
-			if(arr[i] > arr[j>){
+			if(arr[i] > arr[j]){
 				int temp = arr[j];
 				arr[i] = arr[j];
 				arr[j] = temp;

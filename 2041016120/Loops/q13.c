@@ -10,9 +10,6 @@ int main(){
     {
         if(n%i == 0) sumOfDiviors+= i;
     }
-
     if(sumOfDiviors == n) printf("%d is a perfect number",n);
     else printf("%d is not a perfect number",n);
-
-    
 }

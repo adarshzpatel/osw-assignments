@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int check(int x){
+void check(int x){
     if(x > 0) printf("POSITIVE\n");
     else if(x < 0) printf("NEGATIVE\n");
     else printf("ZERO\n");

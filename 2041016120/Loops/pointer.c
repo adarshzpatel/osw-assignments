@@ -1,10 +1,22 @@
 #include<stdio.h>
-
-
+#include<stdlib.h>
+#include<sys/wait.h>
+#include<unistd.h>
+ 
 int main(){
-    int a = 20;
-    int *b = &a;
-    printf("Address of a : %p\n", &a);
-    printf("Address of b : %p\n", b);
-    return 0;
+ pid_t pid;
+ int i=5;
+ pid=fork();
+ i=i+1;
+ if(pid==0)
+ {
+  printf("Child:%d",i);
+
+ }
+ else {
+  wait(NULL);
+  printf("Parent:%d",i);
+
+ }
+ return 0; 
 }
