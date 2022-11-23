@@ -1,0 +1,91 @@
+  #Q1
+  
+  
+  def rep(str1):
+    str=str1[0]
+    j=0
+    for i in range(1,len(str1)):
+        if str1[i]!=str[j]:
+            str+=str1[i]
+            j+=1
+        else:
+            str+='*'
+            j+=1
+    return str
+    
+def main():
+    str=input("Enter string : ")
+    print(rep(str))
+main()
+
+#Q2
+def anagrams(str1,str2):
+    if(sorted(str1)==sorted(str2)):
+        return True
+    else:  
+        return False
+    
+def anagrams2(str1,str2):
+    j=0
+    if(len(str1)==len(str2)):
+        for i in str1:
+            for k in str2:
+                if str1.count(i)==str2.count(k) and i==k :
+                    j+=1
+    n=str1[0]
+    for i in str1:
+        if str1.count(n)>1:
+            j-=str1.count(i)
+        
+                        
+    if(j==len(str1)):
+        return True
+    return False                
+                
+                
+def main():
+    s1='dddooooogg'
+    s2='ggoooooddd'
+    
+    print("anagrams = ",anagrams2(s1,s2))
+main()
+
+#Q3
+
+
+def calcWords(sen):
+    return len(sen.split(" "))
+
+def manualCalcWords(sen):
+    pass
+
+sen = input("Enter sentence : ")
+print("Number of words : " , calcWords(sen))
+
+
+#Q4
+# mimic .title() function without using builtin function 
+def makeTitle(sen):
+    result = ''
+    # for first word 
+    for i in range(0,len(sen)):
+        if sen[i-1] == ' ' and sen[i].isalpha() :
+            result += sen[i].upper()
+        else :  
+            result += sen[i].lower()
+
+    return result
+
+sen = input("Enter sentence : ")
+print(makeTitle(sen))
+
+#Q5
+# write a function taht takes a string as an input and determines the count of the number of words using regex
+import re
+
+def countWords(sen):
+    return len(re.findall('[a-z]+',sen))
+
+sen = input("Enter sentence ")
+print("Enter number of words : ",countWords(sen))
+
