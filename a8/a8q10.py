@@ -1,0 +1,2 @@
+def findStrictInc(n):
+    pass  
