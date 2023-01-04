@@ -1,0 +1,16 @@
+greeting = "Good Morning. Have a Good Day!!"
+
+print("a. greeting.count('Good') = ",greeting.count("Good"))
+print("b. greeting.find('a') = ",greeting.find('a'))
+print("c. greeting.rfind('a') = ",greeting.rfind('a'))
+print("d. greeting.capitalize() = ",greeting.capitalize())
+print("e. greeting.lower() = ",greeting.lower())
+print("f. greeting.upper() = ",greeting.upper())
+print("g. greeting.swapcase() = ",greeting.swapcase())
+print("h. greeting.istitle() =",greeting.istitle())
+print("i. greeting.replace('Good', 'Sweet') =",greeting.replace('Good', 'Sweet'))
+print("j. greeting.strip() = ",greeting.strip())
+print("k. greeting.split() = ",greeting.split())
+print("l. greeting.partition('.')",greeting.partition('.'))
+print("m. greeting.startswith('good') = ",greeting.startswith('good'))
+print("n. greeting.endswith('!!') = ",greeting.endswith('!!'))
